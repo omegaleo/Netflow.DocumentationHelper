@@ -1,8 +1,6 @@
 name: Generate Documentation
 on:
   workflow_dispatch:
-  push:
-    branches: 'main'
 jobs:
   generate_documentation:
     runs-on: ubuntu-latest
