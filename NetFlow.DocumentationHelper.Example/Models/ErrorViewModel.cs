@@ -1,4 +1,4 @@
-namespace NetFlow.DocumentationHelper.Example.Models;
+namespace UnityFlow.DocumentationHelper.Example.Models;
 
 public class ErrorViewModel
 {
