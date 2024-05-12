@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>NetFlow.DocumentationHelper</id>
+    <version>1.0.1</version>
+    <title>Netflow Documentation Helper Library</title>
+    <authors>NetFlow.DocumentationHelper</authors>
+    <licenseUrl>https://github.com/omegaleo/Netflow.DocumentationHelper/blob/main/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/omegaleo/Netflow.DocumentationHelper</projectUrl>
+    <description>A library created with the purpose of helping with generating functional documentation</description>
+    <tags>documentation</tags>
+    <repository type="git" url="https://github.com/omegaleo/Netflow.DocumentationHelper" commit="6e0782df3b3200baa76f2973c851ad047e409654" />
+    <dependencies>
+      <group targetFramework="net7.0" />
+      <group targetFramework=".NETStandard2.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\Projects\UnityFlow\documentation-helper\UnityFlow.DocumentationHelper\NetFlow.DocumentationHelper.Library\bin\Release\net7.0\NetFlow.DocumentationHelper.Library.dll" target="lib\net7.0\NetFlow.DocumentationHelper.Library.dll" />
+    <file src="D:\Projects\UnityFlow\documentation-helper\UnityFlow.DocumentationHelper\NetFlow.DocumentationHelper.Library\bin\Release\netstandard2.1\NetFlow.DocumentationHelper.Library.dll" target="lib\netstandard2.1\NetFlow.DocumentationHelper.Library.dll" />
+  </files>
+</package>
