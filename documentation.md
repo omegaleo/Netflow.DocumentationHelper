@@ -9,5 +9,4 @@ Generates a List of objects of type DocumentationStructure that contain the foll
 \
 *Note: If generateForPackageAssembly is set to true, this will generate documentation for the library as well.*
 
-*Parameters:*
-generateForPackageAssembly - Generate documentation for the DocumentationHelper library as well?
+*Parameters:* \ generateForPackageAssembly - Generate documentation for the DocumentationHelper library as well?
