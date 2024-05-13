@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="74e0a2ab-3983-428e-abe0-cac60f434317" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.UnityFlow.DocumentationHelper/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$" beforeDir="false" afterPath="$PROJECT_DIR$" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/config/applicationhost.config" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/config/applicationhost.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetFlow.DocumentationGenerator/NetFlow.DocumentationGenerator.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/NetFlow.DocumentationGenerator/NetFlow.DocumentationGenerator.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetFlow.DocumentationGenerator/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetFlow.DocumentationGenerator/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetFlow.DocumentationHelper.Example/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetFlow.DocumentationHelper.Example/Controllers/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetFlow.DocumentationHelper.Example/Models/ErrorViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetFlow.DocumentationHelper.Example/Models/ErrorViewModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetFlow.DocumentationHelper.Example/NetFlow.DocumentationHelper.Example.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/NetFlow.DocumentationHelper.Example/NetFlow.DocumentationHelper.Example.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetFlow.DocumentationHelper.Example/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/NetFlow.DocumentationHelper.Example/Views/Home/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetFlow.DocumentationHelper.Example/Views/_ViewImports.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/NetFlow.DocumentationHelper.Example/Views/_ViewImports.cshtml" afterDir="false" />
+    <list default="true" id="74e0a2ab-3983-428e-abe0-cac60f434317" name="Changes" comment="Fix for nullable args in attribute">
+      <change afterPath="$PROJECT_DIR$/NetFlow.DocumentationHelper.Library/Models/DocumentationArgument.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.NetFlow.DocumentationHelper/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NetFlow.DocumentationHelper/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NetFlow.DocumentationHelper.Library/Attributes/DocumentationAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetFlow.DocumentationHelper.Library/Attributes/DocumentationAttribute.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NetFlow.DocumentationHelper.Library/Helpers/DocumentationHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetFlow.DocumentationHelper.Library/Helpers/DocumentationHelper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetFlow.DocumentationHelper.Library/Models/DocumentationAssembly.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetFlow.DocumentationHelper.Library/Models/DocumentationAssembly.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NetFlow.DocumentationHelper.Library/Models/DocumentationStructure.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetFlow.DocumentationHelper.Library/Models/DocumentationStructure.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetFlow.DocumentationHelper.Library/NetFlow.DocumentationHelper.Library.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/NetFlow.DocumentationHelper.Library/NetFlow.DocumentationHelper.Library.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetFlow.DocumentationHelper.sln" beforeDir="false" afterPath="$PROJECT_DIR$/NetFlow.DocumentationHelper.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,11 +17,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock://D:/Projects/UnityFlow/documentation-helper/NetFlow.DocumentationHelper/NetFlow.DocumentationGenerator/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/Projects/UnityFlow/documentation-helper/NetFlow.DocumentationHelper/NetFlow.DocumentationHelper.Example/Views/_ViewImports.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projects/UnityFlow/documentation-helper/NetFlow.DocumentationHelper/NetFlow.DocumentationHelper.Example/Views/_ViewImports.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projects/UnityFlow/documentation-helper/NetFlow.DocumentationHelper/NetFlow.DocumentationHelper.Library/Attributes/DocumentationAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projects/UnityFlow/documentation-helper/NetFlow.DocumentationHelper/NetFlow.DocumentationHelper.Library/Attributes/DocumentationAttribute.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo"><![CDATA[{
@@ -37,14 +32,22 @@
   "associatedIndex": 3
 }]]></component>
   <component name="ProjectId" id="2gPAVbWw9kEmjviqRRnvHUdeyB5" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   },
@@ -129,8 +132,33 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715588864885</updated>
-      <workItem from="1715588867878" duration="138000" />
+      <workItem from="1715588867878" duration="3339000" />
     </task>
+    <task id="LOCAL-00001" summary="Updated namespace">
+      <option name="closed" value="true" />
+      <created>1715589040388</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715589040388</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Updated namespace">
+      <option name="closed" value="true" />
+      <created>1715589097761</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1715589097761</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Fix for nullable args in attribute">
+      <option name="closed" value="true" />
+      <created>1715590347802</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1715590347802</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,4 +166,10 @@
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Updated namespace" />
+    <MESSAGE value="Fix for nullable args in attribute" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix for nullable args in attribute" />
+  </component>
 </project>

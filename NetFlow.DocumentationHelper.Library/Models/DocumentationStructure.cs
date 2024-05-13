@@ -1,4 +1,6 @@
+using System;
 using System.Collections.Generic;
+using NetFlow.DocumentationHelper.Library.Attributes;
 
 namespace NetFlow.DocumentationHelper.Library.Models
 {
@@ -26,11 +28,19 @@ namespace NetFlow.DocumentationHelper.Library.Models
     {
         public string Title;
         public string Description;
+        public string[] Parameters;
 
-        public DocumentationDescription(string title, string description, string[] args = default)
+        [Documentation(nameof(DocumentationDescription), "Description of the current Documented object", new []
+        {
+            "title - Name of the object",
+            "description - Description of what the object does",
+            "parameters - The parameters for the object (in case of a method with parameters)"
+        })]
+        public DocumentationDescription(string title, string description, string[] parameters = default)
         {
             Title = title;
-            Description = string.Format(description, args);
+            Description = description;
+            Parameters = parameters ?? Array.Empty<string>();
         }
     }
 }
