@@ -1,6 +1,6 @@
 ﻿
 using Octokit;
-using UnityFlow.DocumentationHelper.Library.Helpers;
+using NetFlow.DocumentationHelper.Library.Helpers;
 
 class Program
 {

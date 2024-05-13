@@ -1,10 +1,15 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <Nullable>enable</Nullable>
-        <Version>1.0.1</Version>
-        <TargetFrameworks>net7.0;netstandard2.1</TargetFrameworks>
-        <RootNamespace>UnityFlow.DocumentationHelper.Library</RootNamespace>
+        <Version>1.0.0</Version>
+        <TargetFrameworks>net7.0;netstandard2.1;net472</TargetFrameworks>
+        <RootNamespace>NetFlow.DocumentationHelper.Library</RootNamespace>
+        <Title>Netflow Documentation Helper Library</Title>
+        <Description>A library created with the purpose of helping with generating functional documentation</Description>
+        <PackageProjectUrl>https://github.com/omegaleo/Netflow.DocumentationHelper</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/omegaleo/Netflow.DocumentationHelper/blob/main/LICENSE</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/omegaleo/Netflow.DocumentationHelper</RepositoryUrl>
+        <PackageTags>documentation</PackageTags>
     </PropertyGroup>
 
 </Project>

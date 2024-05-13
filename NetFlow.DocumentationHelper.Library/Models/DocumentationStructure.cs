@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace UnityFlow.DocumentationHelper.Library.Models
+namespace NetFlow.DocumentationHelper.Library.Models
 {
 
     public class DocumentationStructure
@@ -27,7 +27,7 @@ namespace UnityFlow.DocumentationHelper.Library.Models
         public string Title;
         public string Description;
 
-        public DocumentationDescription(string title, string description, string[]? args)
+        public DocumentationDescription(string title, string description, string[] args = default)
         {
             Title = title;
             Description = string.Format(description, args);

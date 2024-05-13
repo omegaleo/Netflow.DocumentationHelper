@@ -1,11 +1,13 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Reflection;
-using UnityFlow.DocumentationHelper.Library.Attributes;
-using UnityFlow.DocumentationHelper.Library.Models;
+using System.Xml;
+using NetFlow.DocumentationHelper.Library.Attributes;
+using NetFlow.DocumentationHelper.Library.Models;
 
-namespace UnityFlow.DocumentationHelper.Library.Helpers
+namespace NetFlow.DocumentationHelper.Library.Helpers
 {
 
     public static class DocumentationHelperTool
@@ -19,6 +21,7 @@ namespace UnityFlow.DocumentationHelper.Library.Helpers
 <br>
 Note: If generateForPackageAssembly is set to true, this will generate documentation for the library as well.<br>",
             new[] { nameof(DocumentationStructure) })]
+        
         public static IEnumerable<DocumentationStructure> GenerateDocumentation(bool generateForPackageAssembly = false)
         {
             var assemblies = AppDomain.CurrentDomain.GetAssemblies()
@@ -46,17 +49,24 @@ Note: If generateForPackageAssembly is set to true, this will generate documenta
             }
         }
 
+        /// <summary>
+        /// Test
+        /// </summary>
+        /// <param name="type"></param>
+        /// <param name="assemblyName"></param>
+        /// <returns></returns>
         static DocumentationStructure GetDocumentation(Type type, string assemblyName)
         {
             var classDocs = type.GetCustomAttributes(typeof(DocumentationAttribute), true)
                 .Select(x => (DocumentationAttribute)x);
+            
             var fieldDocs = type.GetFields().SelectMany(f =>
                 f.GetCustomAttributes(typeof(DocumentationAttribute), true).Select(x => (DocumentationAttribute)x));
             var propertyDocs = type.GetProperties().SelectMany(p =>
                 p.GetCustomAttributes(typeof(DocumentationAttribute), true).Select(x => (DocumentationAttribute)x));
             var methodDocs = type.GetMethods().SelectMany(m =>
                 m.GetCustomAttributes(typeof(DocumentationAttribute), true).Select(x => (DocumentationAttribute)x));
-
+            
             var docStructure = new DocumentationStructure(assemblyName, type.Name);
 
             foreach (var doc in classDocs)
@@ -81,7 +91,24 @@ Note: If generateForPackageAssembly is set to true, this will generate documenta
 
             return docStructure;
         }
-
+        
+        static Dictionary<string, string> loadedXmlDocumentation =
+            new Dictionary<string, string>();
+        public static void LoadXmlDocumentation(string xmlDocumentation)
+        {
+            using (XmlReader xmlReader = XmlReader.Create(new StringReader(xmlDocumentation)))
+            {
+                while (xmlReader.Read())
+                {
+                    if (xmlReader.NodeType == XmlNodeType.Element && xmlReader.Name == "member")
+                    {
+                        string raw_name = xmlReader["name"];
+                        loadedXmlDocumentation[raw_name] = xmlReader.ReadInnerXml();
+                    }
+                }
+            }
+        }
+        
         static IEnumerable<Type> GetTypesWithDocumentationAttribute(Assembly assembly)
         {
             foreach (Type type in assembly.GetTypes())

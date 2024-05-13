@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetFlow.DocumentationHelper
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetFlow.DocumentationGenerator", "NetFlow.DocumentationGenerator\NetFlow.DocumentationGenerator.csproj", "{79165A5D-20C2-4B68-9D9E-0626B5EC10B0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "plugins", "plugins", "{CEDDBEF9-4F24-42CF-AA5C-42B306144CE9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,7 @@ Global
 		{79165A5D-20C2-4B68-9D9E-0626B5EC10B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79165A5D-20C2-4B68-9D9E-0626B5EC10B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79165A5D-20C2-4B68-9D9E-0626B5EC10B0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
 EndGlobal
