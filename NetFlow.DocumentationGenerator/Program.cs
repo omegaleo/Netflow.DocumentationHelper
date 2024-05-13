@@ -48,6 +48,8 @@ class Program
                     return documentation;
                 });
 
+                assembly += string.Join(Environment.NewLine, assemblyDocs);
+                
                 return assembly;
             });
 
