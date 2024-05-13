@@ -41,7 +41,7 @@ class Program
                         if (desc.Parameters.Any())
                         {
                             documentation +=
-                                $"{Environment.NewLine}*Parameters:*{Environment.NewLine}{string.Join(Environment.NewLine, desc.Parameters)}";
+                                $"{Environment.NewLine}*Parameters:* \\ {string.Join(Environment.NewLine, desc.Parameters)}";
                         }
                     }
 

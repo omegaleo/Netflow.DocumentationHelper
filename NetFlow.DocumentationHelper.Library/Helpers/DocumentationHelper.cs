@@ -19,7 +19,7 @@ namespace NetFlow.DocumentationHelper.Library.Helpers
 **Title**: Title what we're generating documentation for\
 **Description**: Description of what we're generating documentation for, this can contain usage examples and can use the args array to pass names(e.g.: This method uses this methodology)\
 \
-*Note: If generateForPackageAssembly is set to true, this will generate documentation for the library as well.*\",
+*Note: If generateForPackageAssembly is set to true, this will generate documentation for the library as well.*",
             new []
             {
                 "generateForPackageAssembly - Generate documentation for the DocumentationHelper library as well?"
