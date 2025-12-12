@@ -23,7 +23,11 @@ namespace NetFlow.DocumentationHelper.Library.Helpers
             new []
             {
                 "generateForPackageAssembly - Generate documentation for the DocumentationHelper library as well?"
-            })]
+            }, 
+            @"```csharp <br/>
+DocumentationHelperTool.GenerateDocumentation(true); // Generates documentation for all assemblies including the DocumentationHelper.Library package assembly <br/>
+DocumentationHelperTool.GenerateDocumentation(false); // Generates documentation for all assemblies excluding the DocumentationHelper.Library package assembly <br/>
+```")]
         
         public static IEnumerable<DocumentationStructure> GenerateDocumentation(bool generateForPackageAssembly = false)
         {
@@ -74,22 +78,22 @@ namespace NetFlow.DocumentationHelper.Library.Helpers
 
             foreach (var doc in classDocs)
             {
-                docStructure.AddDescription(new DocumentationDescription(doc.Title, doc.Description, doc.Args));
+                docStructure.AddDescription(new DocumentationDescription(doc.Title, doc.Description, doc.Args, doc.CodeExample));
             }
 
             foreach (var doc in fieldDocs)
             {
-                docStructure.AddDescription(new DocumentationDescription(doc.Title, doc.Description, doc.Args));
+                docStructure.AddDescription(new DocumentationDescription(doc.Title, doc.Description, doc.Args, doc.CodeExample));
             }
 
             foreach (var doc in propertyDocs)
             {
-                docStructure.AddDescription(new DocumentationDescription(doc.Title, doc.Description, doc.Args));
+                docStructure.AddDescription(new DocumentationDescription(doc.Title, doc.Description, doc.Args, doc.CodeExample));
             }
 
             foreach (var doc in methodDocs)
             {
-                docStructure.AddDescription(new DocumentationDescription(doc.Title, doc.Description, doc.Args));
+                docStructure.AddDescription(new DocumentationDescription(doc.Title, doc.Description, doc.Args, doc.CodeExample));
             }
 
             return docStructure;

@@ -43,6 +43,12 @@ class Program
                             documentation +=
                                 $"{Environment.NewLine}*Parameters:* \\ {string.Join(Environment.NewLine, desc.Parameters)}";
                         }
+                        
+                        if (!string.IsNullOrEmpty(desc.CodeExample))
+                        {
+                            documentation +=
+                                $"{Environment.NewLine}#### Example:{Environment.NewLine}```csharp{Environment.NewLine}{desc.CodeExample}{Environment.NewLine}```{Environment.NewLine}";
+                        }
                     }
 
                     return documentation;
