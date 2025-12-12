@@ -10,3 +10,8 @@ Generates a List of objects of type DocumentationStructure that contain the foll
 *Note: If generateForPackageAssembly is set to true, this will generate documentation for the library as well.*
 
 *Parameters:* \ generateForPackageAssembly - Generate documentation for the DocumentationHelper library as well?
+#### Example: 
+```csharp <br/>
+DocumentationHelperTool.GenerateDocumentation(true); // Generates documentation for all assemblies including the DocumentationHelper.Library package assembly <br/>
+DocumentationHelperTool.GenerateDocumentation(false); // Generates documentation for all assemblies excluding the DocumentationHelper.Library package assembly <br/>
+```
