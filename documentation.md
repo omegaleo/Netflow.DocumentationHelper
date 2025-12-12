@@ -11,7 +11,7 @@ Generates a List of objects of type DocumentationStructure that contain the foll
 
 *Parameters:* \ generateForPackageAssembly - Generate documentation for the DocumentationHelper library as well?
 #### Example: 
-```csharp <br/>
-DocumentationHelperTool.GenerateDocumentation(true); // Generates documentation for all assemblies including the DocumentationHelper.Library package assembly <br/>
-DocumentationHelperTool.GenerateDocumentation(false); // Generates documentation for all assemblies excluding the DocumentationHelper.Library package assembly <br/>
+```csharp
+DocumentationHelperTool.GenerateDocumentation(true); // Generates documentation for all assemblies including the DocumentationHelper.Library package assembly
+DocumentationHelperTool.GenerateDocumentation(false); // Generates documentation for all assemblies excluding the DocumentationHelper.Library package assembly
 ```
