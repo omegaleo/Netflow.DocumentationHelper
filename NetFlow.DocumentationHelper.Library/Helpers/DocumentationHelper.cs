@@ -24,9 +24,9 @@ namespace NetFlow.DocumentationHelper.Library.Helpers
             {
                 "generateForPackageAssembly - Generate documentation for the DocumentationHelper library as well?"
             }, 
-            @"```csharp <br/>
-DocumentationHelperTool.GenerateDocumentation(true); // Generates documentation for all assemblies including the DocumentationHelper.Library package assembly <br/>
-DocumentationHelperTool.GenerateDocumentation(false); // Generates documentation for all assemblies excluding the DocumentationHelper.Library package assembly <br/>
+            @"```csharp
+DocumentationHelperTool.GenerateDocumentation(true); // Generates documentation for all assemblies including the DocumentationHelper.Library package assembly
+DocumentationHelperTool.GenerateDocumentation(false); // Generates documentation for all assemblies excluding the DocumentationHelper.Library package assembly
 ```")]
         
         public static IEnumerable<DocumentationStructure> GenerateDocumentation(bool generateForPackageAssembly = false)

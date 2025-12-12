@@ -8,9 +8,9 @@ class Program
     {
         var docs = DocumentationHelperTool.GenerateDocumentation(true);
         
-        var client = new GitHubClient(new ProductHeaderValue("unityflow"));
-        var tokenAuth = new Credentials(Environment.GetEnvironmentVariable("UNITYFLOW_SECRET"));
-        client.Credentials = tokenAuth;
+        //var client = new GitHubClient(new ProductHeaderValue("unityflow"));
+        //var tokenAuth = new Credentials(Environment.GetEnvironmentVariable("UNITYFLOW_SECRET"));
+        //client.Credentials = tokenAuth;
 
         var filePath = "documentation.md";
         
@@ -47,7 +47,7 @@ class Program
                         if (!string.IsNullOrEmpty(desc.CodeExample))
                         {
                             documentation +=
-                                $"{Environment.NewLine}#### Example:{Environment.NewLine}```csharp{Environment.NewLine}{desc.CodeExample}{Environment.NewLine}```{Environment.NewLine}";
+                                $"{Environment.NewLine}#### Example: {Environment.NewLine}{desc.CodeExample}{Environment.NewLine}";
                         }
                     }
 
@@ -58,19 +58,6 @@ class Program
                 
                 return assembly;
             });
-
-        
-        /**foreach (var doc in docs)
-        {
-            documentation += $"# {doc.AssemblyName}{Environment.NewLine}  ";
-            documentation += $"## {doc.ClassName}{Environment.NewLine}  ";
-
-            foreach (var desc in doc.Descriptions)
-            {
-                documentation += $"### {desc.Title}{Environment.NewLine}  ";
-                documentation += $"{desc.Description}{Environment.NewLine}  ";
-            }
-        }**/
         
         File.WriteAllText(filePath, string.Join(Environment.NewLine, documentation));
     }
